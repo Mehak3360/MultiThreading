@@ -4,8 +4,6 @@
 To analyze the performance of matrix multiplication using different numbers of threads.  
 The project multiplies multiple random matrices with a constant matrix and measures execution time for varying thread counts.
 
-
-
 ## Problem Statement
 - Multiply **500 random matrices** of size **1000 × 1000**
 - Each matrix is multiplied with a **constant matrix** of the same size
@@ -16,15 +14,11 @@ The project multiplies multiple random matrices with a constant matrix and measu
   - Performance variation
   - CPU usage
 
-
-
 ## System Configuration
 - Logical CPU Cores: **4**
 - Threads tested: **1 to 8**
 - Language: **Python**
 - Environment: **VS Code**
-
-
 
 ## Technologies Used
 - Python
@@ -33,8 +27,6 @@ The project multiplies multiple random matrices with a constant matrix and measu
 - Matplotlib
 - threadpoolctl
 - psutil
-
-
 
 ## Methodology
 1. Detect number of CPU cores using `os.cpu_count()`
@@ -49,13 +41,10 @@ The project multiplies multiple random matrices with a constant matrix and measu
 6. Plot execution time vs threads graph
 7. Monitor CPU usage using Task Manager
 
-
-
 ## Results
 
 ### Execution Time vs Threads
-![Execution Graph]<img width="604" height="481" alt="image" src="https://github.com/user-attachments/assets/879f705e-e2ef-4959-a135-35003eb2e360" />
-
+<img width="604" height="481" alt="image" src="https://github.com/user-attachments/assets/879f705e-e2ef-4959-a135-35003eb2e360" />
 
 ### Sample Output Table
 
@@ -70,8 +59,6 @@ The project multiplies multiple random matrices with a constant matrix and measu
 | 7 | 36 |   101.8462    |
 | 8 | 30 |   82.8880     |
 
-
-
 ## Observations
 - Best performance observed at **2 threads**
 - Increasing threads beyond optimal leads to:
@@ -80,21 +67,15 @@ The project multiplies multiple random matrices with a constant matrix and measu
   - Memory bottlenecks
 - Performance does **not scale linearly** with threads
 
-
-
 ## Challenges Faced
 - Handling large matrix sizes (memory constraints)
 - Managing CPU utilization visibility
 - Thread overhead affecting performance
 
-
-
 ## Conclusion
 - Multithreading improves performance only up to an optimal point
 - Excess threads can degrade performance due to system limitations
 - Efficient thread management is crucial for high-performance computing
-
-
 
 ## Future Scope
 - Use **multiprocessing** instead of threading
