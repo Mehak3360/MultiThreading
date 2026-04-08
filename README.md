@@ -50,14 +50,14 @@ The project multiplies multiple random matrices with a constant matrix and measu
 
 | Threads | Time (seconds) |
 |--------|---------------|
-| 1 | 34 |   22.8166     |
-| 2 | 23 |   16.4291     |
-| 3 | 54 |   16.5201     |
-| 4 | 54 |   15.0950     |
-| 5 | 33 |   44.4958     |
-| 6 | 28 |   34.7614     |
-| 7 | 36 |   101.8462    |
-| 8 | 30 |   82.8880     |
+| 1 |    22.8166     |
+| 2 |    16.4291     |
+| 3 |    16.5201     |
+| 4 |    15.0950     |
+| 5 |    44.4958     |
+| 6 |    34.7614     |
+| 7 |    101.8462    |
+| 8 |    82.8880     |
 
 ## Observations
 - Best performance observed at **2 threads**
